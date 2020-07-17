@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #D5DBDB ;
+}
+.bare{
+	width: 1170px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a{
+	font-size: 40px;
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	color: white;
+	letter-spacing: 5px;
+}
+nav{
+	float: right;
+	line-height: 100px;
+}
+nav a{
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 20px;
+	color: white;
+
+}
+header{
+	height: 80px;
+	background: #154360;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+	top: -5px;
+}
+#wel{
+	font-size: 200px;
+	position: absolute;
+	left: 250px;
+	top: 150px;
+	color: white;
+
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+	box-sizing: border-box;
+}
+section.pic1{
+	background: url(pic1.gif.gif);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+section.pic2{
+	background: url(gif2.gif);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+section.pic3{
+	background: url(gif5.gif);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+section.pic4{
+	background: url(gif4.gif);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+section.pic5{
+	background: url(gif3.gif);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+section.ktiba{
+	padding: 50px 100px;
+	height: auto;
+}
+#what{
+	font-size: 90px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+#des{
+	font-size: 40px;
+	font-family: 'Abel', sans-serif;
+}
+#taswira{
+	height: 300px;
+	margin-left: 700px;
+}
+#kt{
+	width: 900px;
+	font-size: 40px;
+	font-family: 'Abel', sans-serif;
+}
+#lekher{
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+}
+#felsa{
+	text-decoration: none;
+	font-family: 'Do Hyeon', sans-serif;
+	position: relative;
+	left: 370px;
+	margin: 100px; 
+	display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#felsa:after{
+	    content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2E86C1  ;
+        border-radius: 10rem;
+        z-index: -2;
+}
+#felsa:before{
+	    content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color:#1F618D ;
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+}
+#felsa:hover{
+	   color: #fff;
+}
+#felsa:hover::before{
+        width: 100%;
+}
+footer{
+	color: white;
+	font-family: 'Abel', sans-serif;
+	text-align: center;
+	padding: 80px;
+	background-color: #212F3C;
+}
+footer a{
+	color: #979A9A;
+}
+.socmed{
+	height: 30px;
+	position: relative;
+	top: 60px;
+	left: 550px;
+	padding: 10px;
+}
+
+

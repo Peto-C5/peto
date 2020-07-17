@@ -1,0 +1,90 @@
+​<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="proj.css">
+  <title>Peto society</title>
+    <meta charset="UTF-8">
+​
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+​
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="signin.css"> 
+</head>
+<body>
+ 
+​ <header>
+<div class="bare">
+  <div class="logo">
+    <a href="proj.html">Peto</a>
+  </div>
+  <nav class="item">
+    <a href="proj.html">Home</a>
+    <a href="">About us</a>
+    <a href="sign.html">Log in</a>
+    <a href="sign.html">Sign in</a>
+  </nav>
+</div>
+</header>
+​
+​
+<div class="login-page"></div>
+<div class="form">
+  <form class="register-form">
+  <input id="name" type="text" placeholder="Name"/>
+   <input id="pass" type="password" placeholder="Password"/>
+    <input id="email" type="text" placeholder="Email"/>
+    <button id="create">Create</button>
+    <p class="message">Already Registred?<a id="reg" href="info.html">Login</a></p>
+  </form>
+​
+  <form class="login-form">
+    <input id="username" type="text" placeholder="user name"/>
+    <input id="password" type="password" placeholder="password"/>
+    <button id="acces">Log in</button>
+    <p class="message">Not Registred?<a id="reg" href="#">Register</a></p>
+  </form>
+</div>
+
+<!-- a3mel account -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(".message a").click(function(){
+      $("form").animate({height:"toggle",opacity:"toggle"},"slow");
+      });
+</script>
+<script>
+
+var name =$("#name");
+var pass =$("#pass");
+var email =$("#email")
+
+  $('#create').click(function(){
+     $("form").animate({height:"toggle",opacity:"toggle"},"slow");  
+   localStorage.setItem("name",$("#name").val())
+   localStorage.setItem("pass",$("#pass").val())
+   localStorage.setItem("email",$("#email").val())
+  });
+  $('#acces').click(function(){
+     var namecheck=$("#username").val()
+     var passcheck=$("#password").val()
+     if(localStorage.getItem("name") === namecheck && localStorage.getItem("pass") === passcheck) 
+     {
+      location.replace('info.html')
+     }else{
+      alert("wrong")
+     }
+  });
+</script>
+
+
+
+​
+</body>
+</html>
+

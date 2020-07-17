@@ -1,0 +1,159 @@
+*,html,body
+{
+	margin: 0;
+	padding: 0;
+}
+/*here your bare work*/
+
+.bare{
+	width: 1170px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a{
+	font-size: 40px;
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	color: white;
+	letter-spacing: 5px;
+}
+.bro{
+	text-decoration: none;
+}
+nav{
+	float: right;
+	line-height: 100px;
+	text-decoration: none;
+}
+.item a{
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 20px;
+	color: white;
+
+}
+header{
+	height: 80px;
+	background: #154360;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+	top: -5px;
+}
+/*here is your ligin info*/
+body
+{
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/teenage-girl-friends-texting-with-cell-phone-on-royalty-free-image-753292763-1545422940.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align: center; 
+}
+.login-page
+{
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+.form
+{
+	position: relative;
+	z-index: 1;
+	background: transparent;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	top: 50px;
+}
+.form input
+{
+	font-family: "Robosto", sans-serif; 
+	outline: 1;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+
+}
+.form button
+{
+	color: white;
+	font-family: "Robosto",sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #154360;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: pointer;
+}
+
+.form button:hover,.form button:active
+{
+	background: #1F618D;
+}
+.form .message
+{
+	margin: 15px;
+	color: aliceblue;
+	font-size: 12px;
+}
+.form .message a
+{
+  color: black;
+  text-decoration: none;
+}
+.form .register-form
+{
+	display: none;
+}
+.login-form button
+{
+	color: white;
+	background: #154360;
+}
+.login-form a{
+	color: white;
+}
+#reg{
+	color: #154360;
+	position: relative;
+	left: 10px;
+}
+#log{
+	color: #154360;
+	position: relative;
+	left: 10px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

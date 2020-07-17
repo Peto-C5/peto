@@ -1,0 +1,128 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 { 
+	color: #111; 
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 75px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 2; 
+	text-align: center; 
+}
+
+#quiz {
+	background-color: lightblue;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 80px;
+	margin-right: 80px;
+
+}
+
+input {
+	margin-bottom: 20px;
+	display: block;
+}
+
+#textbox {
+	height: 25px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 5px;
+}
+
+
+#button {
+	background: #004d4d;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	transition-duration: .5s;
+	margin-top: 15px;
+}
+
+
+
+#button:hover {
+	background: white;
+	border: 1px solid green;
+	color: black;
+	cursor: pointer;
+
+}
+
+#submit {
+	visibility: hidden;
+	background: #809fff;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 20px;
+	font-size: 30px;
+
+
+}
+
+#picture {
+	width: 375px;
+	height: 245px;
+}
+
+
+.mybtn {
+	margin top: 800px;
+	margin right: 32px ;
+}
+.exit {
+  border-radius: 4px;
+  background-color: #ccd9ff;
+  border: none;
+  color: #ffffe6;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 220px;
+}
+
+.exit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.exit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.exit :hover span {
+  padding-right: 25px;
+}
+
+.exit :hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+#mc {
+	display: inline;
+} 

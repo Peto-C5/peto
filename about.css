@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.bare{
+	width: 1170px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a{
+	font-size: 40px;
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	color: white;
+	letter-spacing: 5px;
+}
+nav{
+	float: right;
+	line-height: 100px;
+}
+nav a{
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 20px;
+	color: white;
+
+}
+header{
+	height: 80px;
+	background: #154360;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+	top: -5px;
+}
+
+img{
+	height: 300px;
+	border-radius: 100%;
+}
+#im1{
+	position: relative;
+	top: 150px;
+	left: 50px;
+	background-attachment: fixed;
+}
+#im2{
+	position: relative;
+	top: 150px;
+	left: 800px;
+	background-attachment: fixed;
+}
+.west{
+	border-style: solid;
+	border-color: #F8F9F9;
+	background-color:#F8F9F9;
+	width: 600px;
+	position: relative;
+	left: 420px;
+	top: -150px;
+	text-align: center;
+}
+#tt{
+	font-size: 50px;
+	padding: 70px;
+}
+#tt1{
+	font-size: 20px;
+}
+footer{
+	color: white;
+	font-family: 'Abel', sans-serif;
+	text-align: center;
+	padding: 80px;
+	background-color: #212F3C;
+}
+footer a{
+	color: #979A9A;
+	}
+	.socmed{
+	height: 30px;
+	position: relative;
+	top: 60px;
+	left: 550px;
+	padding: 10px;
+}

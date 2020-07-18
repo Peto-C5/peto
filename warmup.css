@@ -1,26 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	font-family: 'Lato', sans-serif;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://i.pinimg.com/originals/cd/dc/b2/cddcb205bf1f0bf3460ca4a5e46fde7b.jpg);
+	background-size: cover;
+
+
+}
+
+
+.bare{
+	width: 1170px;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo{
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a{
+	font-size: 40px;
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	color: white;
+	letter-spacing: 5px;
+}
+nav{
+	float: right;
+	line-height: 100px;
+}
+nav a{
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 20px;
+	color: white;
+
+}
+header{
+	height: 80px;
+	background: #154360;
+	width: 100%;
+	z-index: 12;
+	position: fixed;
+	top: -5px;
 }
 
 h1 { 
-	color: #111; 
+	color: white; 
 	font-family: Impact, Charcoal, sans-serif;
 	font-size: 75px; 
 	font-weight: bold; 
 	letter-spacing: -1px; 
 	line-height: 2; 
 	text-align: center; 
+	padding: 130px;
 }
 
 #quiz {
-	background-color: lightblue;
+	background-color: white;
 	padding: 10px 20px 10px 20px;
 	width: 400px;
-	border-radius: 20px;
+	border-radius: 0px;
 	float: left;
 	margin-left: 80px;
 	margin-right: 80px;
-
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	padding: 70px;
 }
 
 input {
@@ -38,7 +90,7 @@ input {
 
 
 #button {
-	background: #004d4d;
+	background: ;
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
@@ -82,10 +134,10 @@ input {
 	margin right: 32px ;
 }
 .exit {
-  border-radius: 4px;
-  background-color: #ccd9ff;
+  border-radius: 0px;
+  background-color: #154360;
   border: none;
-  color: #ffffe6;
+  color: black;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -94,6 +146,8 @@ input {
   cursor: pointer;
   margin: 5px;
   margin-top: 220px;
+  position: relative;
+  top: 250px;
 }
 
 .exit span {
@@ -126,3 +180,11 @@ input {
 #mc {
 	display: inline;
 } 
+
+.questions{
+	font-size: 30px;
+	padding: 10px;
+}
+.exit a{
+	color: white;
+}

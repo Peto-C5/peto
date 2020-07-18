@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+	#to-add {
+	}
+</style>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src = "info.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="proj.css">
 	<link rel="stylesheet" type="text/css" href="info.css">
+	<link rel="stylesheet" type="text/css" href="proj.css">
 	<title>Peto society</title>
 </head>
 <body>
-
 
 	<header>
 <div class="bare">
@@ -19,18 +24,17 @@
 	</div>
 	<nav>
 		<a href="proj.html">Home</a>
-		<a href="">About us</a>
+		<a href="about.html">About us</a>
 		<a href="#">welcome</a>
 	</nav>
 </div>
 </header>
 
-
 <form action="file:///C:/Users/TheBlueGhost/Desktop/skan%20&%20ghas/profile.html">
 <div class="login-page"></div>
 <div class="form">
 <input id="FN" type="text" placeholder="FullName"/>
-<input rows="4" cols="50" id="bio" type="text" placeholder="Bio"/>
+<input id="bio" type="text" placeholder="Bio"/>
 <input id="job" type="text" placeholder="Your job"/>
 <input id="place" type="text" placeholder="Where you live"/>
 <input id="src" type="text" placeholder="SRC Image"/>
@@ -40,9 +44,59 @@
 	<option class="bb">Female</option>
 	<option class="bb">Other</option>
 </select>
-<input id="andah" type="submit" value="Submit">
+<button id="andah" type="button">Submit</button>
+</div>
 </form>
+<div class="info">
+  <img id="gh" src="">
+  <h5 class="ppp">Full name</h5>
+
+  <p id="pname"> </p>
+
+  <h5 class="ppp">BIO</h5>
+
+  <p id="ppass"> </p>
+
+  <h5 class="ppp">Your job</h5>
+
+  <p id="pjob"> </p>
+
+  <h5 class="ppp">Live in</h5>
+
+  <p id="pposition"> </p>
 
 
+  <p id="pimg"></p>
+
+  <h5 class="ppp">Your Gender</h5>
+
+  <p id="g"> </p>
+  
+  <a id="next" href="file:///C:/Users/TheBlueGhost/Desktop/peto/warmup.html">Next</a>
+  
+</div>
 </body>
+<script type="text/javascript">
+
+   	$('#andah').on('click',function(){
+	var addName = $('#FN').val()
+	$('#pname').text(addName)
+	var addPass = $('#bio').val()
+	$('#ppass').text(addPass)
+    var addJob = $('#job').val()
+    $('#pjob').text(addJob)
+    var addPossition = $('#place').val()
+    $('#pposition').text(addPossition)
+    var addImage = $('#src').val()
+    $('#gh').attr('src',addImage)
+    var sex = $('.akhtar').val()
+    $('#g').text(sex)
+
+    
+    $('.form').slideToggle()
+
+
+
+})
+</script>
 </html>

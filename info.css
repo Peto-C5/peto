@@ -97,10 +97,66 @@ header{
 	background-color: #f2f2f2;
 }
 
+.info{
+	position: relative;
+	z-index: 1;
+	background: transparent;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	top: 50px;
+}
+.imfo p{
+	font-family: "Robosto", sans-serif; 
+	outline: 1;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding: 90px;
+}
+
 .bb{
 	text-align: center;
 }
 #andah{
 	position: relative;
 	top: 15px;
+}
+#fr{
+
+}
+.info{
+	position:relative;
+	background-color: #f2f2f2;
+	left:0px;
+	top:111px;
+}
+.ppp{
+	font-size: 20px;
+	position: relative;
+	right: 150px;
+	font-family: 'Abel', sans-serif;
+	padding: 30px;
+}
+#next{
+	font-size: 30px;
+	width:120px;
+	height: 50px;
+	font-family: 'Abel', sans-serif;
+	background-color: #154360;
+	color: white;
+	text-decoration: none;
+}
+#gh{
+	height: 250px;
+	border-radius: 100%;
+	position: relative;
+	top: -20px;
+	width: 270px;
+	padding: 50px;
 }

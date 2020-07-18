@@ -1,0 +1,127 @@
+.bare{
+  width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo{
+  width: 30%;
+  float: left;
+  line-height: 100px;
+}
+.logo a{
+  font-size: 40px;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  color: white;
+  letter-spacing: 5px;
+}
+nav{
+  float: right;
+  line-height: 100px;
+}
+
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 20px;
+  
+
+}
+header{
+  height: 80px;
+  background: #154360;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+  top: -5px;
+}
+#container {
+  width: 500px;
+  margin: auto;
+  display: block;
+  height: 500px;
+  position: relative;
+  list-style-type: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.skoby {
+  display: none;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  color: black;
+  padding: 20px;
+  width: 360px;
+  height: 360px;
+  top: 180px;
+  left: 50px;
+  position: absolute;
+  cursor: hand;
+}
+.rotate-left {
+  transform: rotate(30deg) scale(0.8);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+  z-index: 10;
+}
+.rotate-right {
+  transform: rotate(-30deg) scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+  z-index: 10;
+}
+.avatar {
+  background: #222;
+  width: 340px;
+  height: 340px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-size: auto 160% !important;
+  background-position: center;
+ background-repeat: no-repeat;
+}
+.like {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid green;
+  color: green;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  text-shadow: none;
+}
+.dislike {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid red;
+  color: red;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  text-shadow: none;
+}
+#aaa{
+  font-size: 30px;
+  position: relative;
+  top: 90px;
+  left: 420px;
+  font-family: 'Abel', sans-serif;
+}

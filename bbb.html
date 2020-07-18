@@ -1,0 +1,135 @@
+<!DOCTY.PE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Questrial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="bbb.css">
+
+    <title>Peto society</title>
+  <link rel = "icon" href ="https://image.flaticon.com/icons/svg/3050/3050467.svg"type = "image/x-icon">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+<body>
+
+
+
+    <header>
+<div class="bare">
+  <div class="logo">
+    <a href="proj.html">Peto</a>
+  </div>
+  <nav>
+    <a href="proj.html">Home</a>
+    <a href="">About us</a>
+    <a href="#">welcome</a>
+  </nav>
+</div>
+</header>
+
+
+
+  <div id="container">
+    <div class="skoby" style="display: block;"><div class="avatar"  style="display: block; background-image: url(https://i.pinimg.com/originals/5d/88/cb/5d88cb9ab162936321d63968b4d63e80.jpg)"></div></div>
+
+
+    <div class="skoby"><div class="avatar" style="display: block; background-image: url(https://cdn.sm-news.ru/wp-content/uploads/2020/04/16/940x730_woman-hat.jpg)"></div></div>
+
+
+    <div class="skoby"><div class="avatar" style="display: block; background-image: url(http://w1nd.cc/promo/347.jpg)"></div></div>
+
+
+<div class="skoby">
+  <div class="avatar" style="display: block; background-image: url(https://i.pinimg.com/originals/54/a8/90/54a8902349854d4d1dd4e3edcae92e6c.jpg)"></div></div>
+
+
+    <div class="skoby"><div class="avatar" style="display: block; background-image: url(https://i.pinimg.com/736x/0a/a1/8c/0aa18cbd96f656efa2fc18ed008c850e.jpg)">
+    </div></div>
+
+
+    <div class="skoby"><div class="avatar" style="display: block; background-image: url(https://i.pinimg.com/originals/54/38/ee/5438ee4b1052e4328ccee71927178ab1.jpg)">
+    </div></div>
+
+
+     <div class="skoby"><div class="avatar" style="display: block; background-image: url(https://lh3.googleusercontent.com/proxy/RfD23VKsS0mIxnbbC1S0uJwLSnSC1CYTmZP1fFpD3XPsAnV6vFU0PDLF8W502zmfxVnnzNM2S1ULVgYlJh1YD5DzKIyciC9uLBEV1M38Wi2oqJ9wTzWIF4mL5u00oAeCmSTfHX5nhb_ll_4cUCpZTIm1D18PrZSFK0K3-lCRGKsBmQk3rsCmzuztLAQ4A89Ca-WwUA)">
+    </div></div>
+
+
+    <div class="skoby"><div class="avatar" style="display: block; background-image: url(https://novafashion.ru/wp-content/uploads/2018/12/strizhki-piksi-1.jpg)">
+    </div></div>
+
+
+    <div class="skoby"><div class="avatar" style="display: block; background-image: url(https://www.curlybesthairstyles.com/wp-content/uploads/2018/01/short-hairstyles-for-women-with-curly-hair-11.jpg)">
+    </div></div>
+
+  </div>
+
+
+
+<div>
+  <p id="aaa">Here we go !! you can find what you look in for exactly have fun</p>
+
+
+</div>
+
+
+
+<!-- WARNING -->
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    $(".skoby").on("swiperight",function(){
+      
+      $(this).addClass('rotate-left').delay(700).fadeOut(1);
+      
+      $('.skoby').find('.status').remove();
+      
+      $(this).append('<div class="status like">COOOL</div>');
+      
+      if ( $(this).is(':last-child') ) {
+      
+        $('.skoby:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+      
+       } else {
+      
+          $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+      
+       }
+    
+    });
+   
+   $(".skoby").on("swipeleft",function(){
+   
+    $(this).addClass('rotate-right').delay(700).fadeOut(1);
+   
+     $('.skoby').find('.status').remove();
+    
+    $(this).append('<div class="status dislike">WTF!</div>');
+    
+    if ( $(this).is(':last-child') ) {
+    
+     $('.skoby:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+    
+      alert('OUPS');
+    
+     } else {
+    
+        $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+    
+    }
+  
+  });
+
+});
+
+  </script>
+
+</body>
+
+</html>

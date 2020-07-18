@@ -8,8 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="proj.css">
   <title>Peto society</title>
-    <meta charset="UTF-8">
-​
+​<link rel = "icon" href ="https://image.flaticon.com/icons/svg/3050/3050467.svg"type = "image/x-icon">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 ​
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,7 +23,7 @@
   </div>
   <nav class="item">
     <a href="proj.html">Home</a>
-    <a href="">About us</a>
+    <a href="about.html">About us</a>
     <a href="sign.html">Log in</a>
     <a href="sign.html">Sign in</a>
   </nav>
@@ -39,7 +38,7 @@
    <input id="pass" type="password" placeholder="Password"/>
     <input id="email" type="text" placeholder="Email"/>
     <button id="create">Create</button>
-    <p class="message">Already Registred?<a id="reg" href="info.html">Login</a></p>
+    <p class="message">Already Registred?<a id="reg">Login</a></p>
   </form>
 ​
   <form class="login-form">
@@ -65,10 +64,22 @@ var pass =$("#pass");
 var email =$("#email")
 
   $('#create').click(function(){
-     $("form").animate({height:"toggle",opacity:"toggle"},"slow");  
-   localStorage.setItem("name",$("#name").val())
+  $("form").animate({height:"toggle",opacity:"toggle"},"slow");  
+  
+   localStorage.setItem("name",$("#name").val() )
    localStorage.setItem("pass",$("#pass").val())
    localStorage.setItem("email",$("#email").val())
+
+   $('#create').on('click',function(){
+    var myName = $('#name').val()
+    var myPass =$("#pass").val();
+    var myEmail =$("#email").val();
+    if (myName === '' || myPass === '' || myEmail === '' ) {
+    alert('nope')
+    } else {
+       $("form").animate({height:"toggle",opacity:"toggle"},"slow"); 
+     }
+   })
   });
   $('#acces').click(function(){
      var namecheck=$("#username").val()
@@ -77,14 +88,10 @@ var email =$("#email")
      {
       location.replace('info.html')
      }else{
-      alert("wrong")
+      alert("your Password or User name are wrong ! please try again")
      }
   });
 </script>
-
-
-
-​
 </body>
 </html>
 
